@@ -1,0 +1,51 @@
+.rutaCabecera {
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.marco {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding-top: 15px;
+}
+
+.distForm {
+    margin-bottom: 20px;
+}
+
+.tablaHijo {
+    margin: 5px;
+}
+
+.padre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hijo {
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+.infor {
+    background-color: #3598dc;
+    color: white;
+    size: 20px;
+}
+
+.infor a {
+    color: white;
+}
+
+#reportrange {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+

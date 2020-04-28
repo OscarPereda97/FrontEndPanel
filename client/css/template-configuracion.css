@@ -1,0 +1,44 @@
+.cabeceraEmpresa,
+.cabeceraZonas,
+.cabeceraNuevaZona,
+.cabeceraEditarZona,
+.cabeceraLimiteVentas{
+    width: 100%;
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.elementoCabecera,
+.elementosZonas,
+.elementoNuevaZona,
+.editarNuevaZona,
+.elementoLimiteVentas{
+    height: 80px;
+    width: 15%;
+    float: left;
+}
+
+.contenidosDatosEmpresa{
+    margin: 0 50px;
+}
+
+.tituloCabecera{
+    width: 400px !important;
+}
+
+.contenedor{
+    margin: 0 20px;
+}
+
+.marco{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px !important;
+}
+
+.distElemento{
+    margin: 50px 20px;
+}

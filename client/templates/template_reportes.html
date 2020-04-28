@@ -1,0 +1,1276 @@
+<!-- TEMPLATE Reporte Ventas-->
+<template name="reporteVentas">
+    <div class="rutaCabecera">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Ventas</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Zona: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <div class="radio">
+                    <label><input type="radio" value="resumido" checked="checked"> Resumido</label>
+                    <label><input type="radio" value="detallado"> Detallado</label>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Vendedor</strong></th>
+                                <th><strong> Venta</strong></th>
+                                <th><strong>Comisión</strong></th>
+                                <th><strong>Comisión Sup.</strong></th>
+                                <th><strong>Premios</strong></th>
+                                <th><strong>Resultado</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>124,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> </td>
+                                <td><strong>125,252.00</strong></td>
+                                <td><strong>14,252.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>91,569.00</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Números-->
+<template name="reporteNumeros">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Números</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Lotería: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Elemento 1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Jugador </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Elemento 1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Zona: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Elemento 1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Vendedor: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Elemento 1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Resumir por números
+                    </label>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th>Tipo jugada</th>
+                                <th>Lotería</th>
+                                <th>Número</th>
+                                <th>Venta total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Borlette</td>
+                                <td>New York Maten</td>
+                                <td>07</td>
+                                <td>20,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>Borlette</td>
+                                <td>New York Maten</td>
+                                <td>07</td>
+                                <td>20,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>Borlette</td>
+                                <td>New York Maten</td>
+                                <td>07</td>
+                                <td>20,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Vendedores-->
+<template name="reporteVendedores">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Vendedores</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Zona: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <div class="radio">
+                    <label><input type="radio" value="resumido" checked="checked"> Resumido</label>
+                    <label><input type="radio" value="detallado"> Detallado</label>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resumen Ventas</label>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped sortable table-bordered tablaHijo">
+                        <thead>
+                            <tr>
+                                <th>Venta</th>
+                                <th>Comisión</th>
+                                <th>Premios</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No hay datos disponibles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resumen Tickets</label>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th>Realizados</th>
+                                <th>Premiados</th>
+                                <th>Pagados</th>
+                                <th>Pendientes</th>
+                                <th>Anulados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No hay datos disponibles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+            <div class="inforComplementaria">
+                <label>Monto tickets pagados: 0</label>
+                <br>
+                <label>Monto tickets pendientes a pagar: 0</label>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Loterias y jugadas-->
+<template name="reporteLoteriasJugadas">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Loterías Jugadas</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Zona: </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resumen por
+                                        Loterias</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped sortable table-bordered tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Loteria</strong></th>
+                                <th><strong>Venta</strong></th>
+                                <th><strong>Comisión</strong></th>
+                                <th><strong>Premios</strong></th>
+                                <th><strong>Balance</strong></th>
+                                <th><strong>% Venta</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> </td>
+                                <td><strong>125,252.00</strong></td>
+                                <td><strong>14,252.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>91,569.00</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resumen por Tipo de
+                                        Jugada</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped sortable table-bordered tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Tipo apuesta</strong></th>
+                                <th><strong>Venta</strong></th>
+                                <th><strong>En Primera</strong></th>
+                                <th><strong>En Segunda</strong></th>
+                                <th><strong>En Tercera</strong></th>
+                                <th><strong>Premio</strong></th>
+                                <th><strong>% Venta</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                                <td>33.3%</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                                <td>33.3%</td>
+                            </tr>
+                            <tr>
+                                <td>La Solution</td>
+                                <td>125,252.00</td>
+                                <td>14,252.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>91,569.00</td>
+                                <td>33.4%</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td> </td>
+                                <td><strong>125,252.00</strong></td>
+                                <td><strong>14,252.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>91,569.00</strong></td>
+                                <td>100%</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Tickets No Pagados-->
+<template name="reporteTicketsNoPagados">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Tickets no Pagados</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Fecha</strong></th>
+                                <th><strong>Ticket</strong></th>
+                                <th><strong>Premio</strong></th>
+                                <th><strong>Vendedor</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>LA SOLUTION KIMMY</td>
+                            </tr>
+                            <tr>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>LA SOLUTION KIMMY</td>
+                            </tr>
+                            <tr>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>LA SOLUTION KIMMY</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Tickets Premiados-->
+<template name="reporteTicketsPremiados">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Tickets Premiados</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Vendedor</strong></th>
+                                <th><strong>Fecha</strong></th>
+                                <th><strong>Ticket</strong></th>
+                                <th><strong>Monto Jugado</strong></th>
+                                <th><strong>Premio</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>14,252.00</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>14,252.00</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>27/04/2020 11:11 AM</td>
+                                <td>99999999999</td>
+                                <td>14,252.00</td>
+                                <td>14,252.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Tickets Anulados-->
+<template name="reporteTicketsAnulados">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Tickets Anulados</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Fecha</strong></th>
+                                <th><strong>Ticket</strong></th>
+                                <th><strong>Monto</strong></th>
+                                <th><strong>Anulado hora</strong></th>
+                                <th><strong>Anulado por</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No hay datos disponibles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Balances-->
+<template name="reporteBalances">
+    <div class="rutaReporteVentas">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Balances</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Vendedor </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Zona Mijail
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-file-text-o" aria-hidden="true"></i> Resultados</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Vendedor</strong></th>
+                                <th><strong>Resultado</strong></th>
+                                <th><strong>P. Premios</strong></th>
+                                <th><strong>SubTotal</strong></th>
+                                <th><strong>Deuda</strong></th>
+                                <th><strong>Balance</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION KIMMY</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                                <td>0.00</td>
+                                <td>733,800.50</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td><strong>733,800.50</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>733,800.50</strong></td>
+                                <td><strong>0.00</strong></td>
+                                <td><strong>733,800.50</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Comisión Supervisor-->
+<template name="reporteComisionSupervisor">
+    <div class="rutaCabecera">
+        <label>
+            <h4><strong>Reportes </strong> / <strong>Comisión Supervisor</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <div class="datosVentasEntrada distElemento">
+            <div class="distForm">
+                <label>Fecha</label>
+                <!---->
+                <div id="reportrange">
+                    <i class="fa fa-calendar"></i>&nbsp;
+                    <span></span> <i class="fa fa-caret-down"></i>
+                </div>
+                <!---->
+            </div>
+            <div class="distForm">
+                <label>Zona </label>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Elemento 1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="distForm">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+                    Consultar</button>
+            </div>
+        </div>
+        <div class="tablaResultados marco">
+            <table class="table">
+                <thead>
+                    <tr class="infor">
+                        <th>
+                            <div class="padre">
+                                <div class="hijo">
+                                    <label><i class="fa fa-usd" aria-hidden="true"></i> Ventas</label>
+                                </div>
+                                <div class="hijo">
+                                    <div class="iconos">
+                                        <a href="#">
+                                            <i class="fa fa-print" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                        <a href="#">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <table class="table table-striped table-bordered sortable tablaHijo">
+                        <thead>
+                            <tr>
+                                <th><strong>Vendedor</strong></th>
+                                <th><strong>Ventas</strong></th>
+                                <th><strong>Comisión</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LA SOLUTION HOLAAMUNDO</td>
+                                <td>10,025.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION HOLAAMUNDO</td>
+                                <td>10,025.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>LA SOLUTION HOLAAMUNDO</td>
+                                <td>10,025.00</td>
+                                <td>0.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td><strong>10,025.00</strong></td>
+                                <td><strong>0.00</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Registro de cambios-->
+<template name="reporteRegistroCambios">
+    <div class="rutaCabecera">
+        <label>
+            <h4><strong>Reportes</strong> / <strong>Registro de cambios</strong></h4>
+        </label>
+    </div>
+    <div class="container-fluid marco">
+        <table class="table table-striped sortable table-bordered">
+            <thead>
+                <tr>
+                    <th><strong>Fecha</strong></th>
+                    <th><strong>Usuario</strong></th>
+                    <th><strong>Sección</strong></th>
+                    <th><strong>Acción</strong></th>
+                    <th><strong>Elemento</strong></th>
+                    <th><strong>Mensaje</strong></th>
+                    <th><strong>Hora</strong></th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <input type="date" class="form-control">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle buton" type="button" data-toggle="dropdown">Usuario 1
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <input class="form-control" id="dropdownFiltro" type="text" placeholder="Search..">
+                                <li><a href="#">#</a></li>
+                                <li><a href="#">#</a></li>
+                                <li><a href="#">#</a></li>
+                                <li><a href="#">#</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-large btn-block btn-default"><i class="fa fa-refresh"
+                                aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>27-04-2020</td>
+                    <td>Olymps</td>
+                    <td>Usuarios</td>
+                    <td>
+
+                        <span class="label label-info">Crear</span>
+
+                    </td>
+                    <td>New York Maten</td>
+                    <td>
+                        <p>Campo: column_cookie_time
+                            Valor anterior: 1587942608
+                            Valor nuevo: 1588012340</p>
+                    </td>
+                    <td>14:32:20</td>
+                </tr>
+                <tr>
+                    <td>27-04-2020</td>
+                    <td>Olymps</td>
+                    <td>Usuarios</td>
+                    <td>
+
+                        <span class="label label-info">Crear</span>
+
+                    </td>
+                    <td>New York Maten</td>
+                    <td>
+                        <p>Campo: column_cookie_time
+                            Valor anterior: 1587942608
+                            Valor nuevo: 1588012340</p>
+                    </td>
+                    <td>14:32:20</td>
+                </tr>
+                <tr>
+                    <td>27-04-2020</td>
+                    <td>Olymps</td>
+                    <td>Usuarios</td>
+                    <td>
+
+                        <span class="label label-success">Editar</span>
+
+                    </td>
+                    <td>New York Maten</td>
+                    <td>
+                        <p>Campo: column_cookie_time
+                            Valor anterior: 1587942608
+                            Valor nuevo: 1588012340</p>
+                    </td>
+                    <td>14:32:20</td>
+                </tr>
+                <tr>
+                    <td>27-04-2020</td>
+                    <td>Olymps</td>
+                    <td>Usuarios</td>
+                    <td>
+
+                        <span class="label label-success">Editar</span>
+
+                    </td>
+                    <td>New York Maten</td>
+                    <td>
+                        <p>Campo: column_cookie_time
+                            Valor anterior: 1587942608
+                            Valor nuevo: 1588012340</p>
+                    </td>
+                    <td>14:32:20</td>
+                </tr>
+                <tr>
+                    <td>27-04-2020</td>
+                    <td>Olymps</td>
+                    <td>Usuarios</td>
+                    <td>
+
+                        <span class="label label-info">Crear</span>
+
+                    </td>
+                    <td>New York Maten</td>
+                    <td>
+                        <p>Campo: column_cookie_time
+                            Valor anterior: 1587942608
+                            Valor nuevo: 1588012340</p>
+                    </td>
+                    <td>14:32:20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>

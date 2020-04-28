@@ -1,0 +1,21 @@
+html{
+}
+
+#login{
+	position: relative;
+}
+.cont-login{
+	position: absolute;
+	top: 50vh;
+	left: 50vh;
+	display: flex;
+	align-items: center;
+}
+.form-login{
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	border-width: 1px;
+	border-radius: 10px;
+	padding:20px;
+
+}

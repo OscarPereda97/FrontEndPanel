@@ -1,0 +1,366 @@
+<template name="loteria">
+
+    <div class="container-fluid">
+        <div class="cabeceraLoteria">
+            <h4>Loterias</h4>
+        </div>
+        <table class="table table striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Abreviado</th>
+                    <th>Cierre</th>
+                    <th>Estatus</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>New York D</td>
+                    <td>ND</td>
+                    <td>12:20</td>
+                    <td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>
+                    <td><a href="/dashboard/loteria/edit"><button class="btn"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</template>
+
+<template name="editLoteria">
+    <div class="container-fluid marco">
+        <div class="cabeceraEditLoteria">
+            <div class="elementoEditLoteria contenidoCabecera">
+                <h3>Editar lotería <strong>(New Your D)</strong></h3>
+            </div>
+            <div class="elementoEditLoteria">
+                <a href="/dashboard/configuracion/limiteventas">
+                    <button class="btn">&#60; Regresar</button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        Guardar</button>
+                </a>
+            </div>
+        </div>
+        <div class="contenedor row">
+            <div class="datos-basicos distElemento">
+                <h3><i class="fa fa-file-text-o" aria-hidden="true"></i> Datos básicos</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre lotería</th>
+                            <th>Abreviado</th>
+                            <th>Código</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Abreviado">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Código">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle btn-block" type="button"
+                                        data-toggle="dropdown">Estado
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><i class="fa fa-ban" aria-hidden="true"></i> Bloqueado</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i> Activo</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="horario-cierre distElemento">
+                <h3><i class="fa fa-calendar" aria-hidden="true"></i> Horario de cierre</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                            <th>Domingo</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="00:00">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row distElemento">
+                <div class="no-salir-ticket col-lg-6">
+                    <h3><i class="fa fa-calendar-times-o" aria-hidden="true"></i> No salir en ticket con:</h3>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"> New York Maten</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> New York N</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"> New York Soir</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dias-inactivos col-lg-3">
+                    <h3><i class="fa fa-calendar-times-o" aria-hidden="true"> Días inactivos</i></h3>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premios distElemento">
+                <h3><i class="fa fa-money" aria-hidden="true"></i> Premios</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Primera</th>
+                            <th>Segunda</th>
+                            <th>Tercera</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Quinela
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Palé
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tripleta
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Super Palé
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="premios-vendedor distElemento">
+                <h3><i class="fa fa-money" aria-hidden="true"> Premios por vendedor</i></h3>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle buton" type="button" data-toggle="dropdown">
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <input class="form-control" id="dropdownFiltro" type="text" placeholder="Search..">
+                        <li><a href="#">LA SOLUTION CURICO</a></li>
+                        <li><a href="#">LA SOLUTION SANLUIS</a></li>
+                        <li><a href="#">SMP</a></li>
+                        <li><a href="#">BREÑA</a></li>
+                        <li><a href="#">CALLAO</a></li>
+                        <li><a href="#">LIMA</a></li>
+                    </ul>
+                </div>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Primera</th>
+                            <th>Segunda</th>
+                            <th>Tercera</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Quinela
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Palé
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tripleta
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Super Palé
+                            </td>
+                            <td>
+                                <div class="formgroup"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="grafico-color distElemento">
+                <h3><i class="fa fa-area-chart" aria-hidden="true"></i> Color de gráfico</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <input type="color" class="input-color form-control">
+                    </div>
+                </div>
+
+            </div>
+            <div class="tipo-loteria distElemento">
+                <h3>Tipo de lotería</h3>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle buton" type="button" data-toggle="dropdown">
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <input class="form-control" id="dropdownFiltro" type="text" placeholder="Search..">
+                        <li><a href="#">LA SOLUTION CURICO</a></li>
+                        <li><a href="#">LA SOLUTION SANLUIS</a></li>
+                        <li><a href="#">SMP</a></li>
+                        <li><a href="#">BREÑA</a></li>
+                        <li><a href="#">CALLAO</a></li>
+                        <li><a href="#">LIMA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Row-->
+    </div>
+    <!--Container-->
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+</template>

@@ -1,0 +1,231 @@
+<template name="sidebar">
+    <nav class="navPers">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Proyecto
+                    </a>
+                </li>
+                <li>
+                    <a href="/dashboard">Inicio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configuración <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/dashboard/configuracion/empresa">Empresa</a></li>
+                        <li><a href="/dashboard/configuracion/zonas">Zonas</a></li>
+                        <li><a href="/dashboard/configuracion/limiteventas">Limite de ventas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/dashboard/loteria">Loterías</a>
+                </li>
+                <li>
+                    <a href="/dashboard/terminales">Terminales</a>
+                </li>
+                <li>
+                    <a href="/dashboard/monitoreo">Monitoreo</a>
+                </li>
+                <li>
+                    <a href="/dashboard/sorteos">Sorteos</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/dashboard/reportes/ventas">Ventas</a></li>
+                        <li><a href="/dashboard/reportes/numeros">Números</a></li>
+                        <li><a href="/dashboard/reportes/vendedores">Vendedores</a></li>
+                        <li><a href="/dashboard/reportes/loterias-jugadas">Loterías y jugadas</a></li>
+                        <li><a href="/dashboard/reportes/tickets-no-pagados">Tickets no pagados</a></li>
+                        <li><a href="/dashboard/reportes/tickets-premiados">Tickets premiados</a></li>
+                        <li><a href="/dashboard/reportes/tickets-anulados">Tickets anulados</a></li>
+                        <li><a href="/dashboard/reportes/balances">Balances</a></li>
+                        <li><a href="/dashboard/reportes/comision-supervisor">Comisión supervisor</a></li>
+                        <li><a href="/dashboard/reportes/registro-cambios">Registro de cambios</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuadre <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/dashboard/cuadre/cuadre-vendedor">Cuadre vendedor</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recargas <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/dashboard/recargas/terminales">Terminales</a></li>
+                        <li><a href="/dashboard/recargas/reportes-terminales">Reportes terminales</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/dashboard/usuarios/administradores">Administradores</a></li>
+                        <li><a href="/dashboard/usuarios/vendedores">Vendedores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/dashboard/mi-cuenta">Mi cuenta</a>
+                </li>
+                <li>
+                    <a href="#">Desconectar</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+
+            {{> Template.dynamic template=page }}
+
+        </div>
+    </div>
+
+</template>
+
+<template name="graficoBarras">
+    <div class="container-fluid marcoInicio">
+        <div class="cabecera">
+            <h3><strong><i class="fa fa-line-chart" aria-hidden="true"></i>Ventas por loteria</strong></h3>
+        </div>
+        <div id="chartdiv">
+
+        </div>
+    </div>
+</template>
+
+<template name="infoResumen">
+    <div class="container-fluid infoResumenContainer">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="info-ventas">
+                    <h3>$1,118,500.00</h3>
+                    <h4>Ventas</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="info-premios">
+                    <h3>$460,000.00</h3>
+                    <h4>Premios</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="info-comision">
+                    <h3>$151,252.00</h3>
+                    <h4>Comisión</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="info-balance">
+                    <h3>$506,252.00</h3>
+                    <h4>Balance</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="ventasLoteriaGrafico">
+
+</template>
+
+<template name="cuadroVentas">
+    <div class="containerTabla">
+
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#ventasDia">Ventas del día</a></li>
+            <li><a data-toggle="tab" href="#semana">Semana</a></li>
+            <li><a data-toggle="tab" href="#mes">Mes</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="ventasDia" class="tab-pane fade in active">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Vendedor</th>
+                            <th>Venta</th>
+                            <th>Comisión</th>
+                            <th>Premios</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1) LASOLUTION FONTOVA47</td>
+                            <td>157,000.00</td>
+                            <td>23,550.00</td>
+                            <td>350,000.00</td>
+                            <td>-216,550.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="semana" class="tab-pane fade">
+                <table class="table  table-striped">
+                    <thead>
+                        <tr>
+                            <th>Vendedor</th>
+                            <th>Venta</th>
+                            <th>Comisión</th>
+                            <th>Premios</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1) LASOLUTION FONTOVA47</td>
+                            <td>157,000.00</td>
+                            <td>23,550.00</td>
+                            <td>350,000.00</td>
+                            <td>-216,550.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="mes" class="tab-pane fade">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Vendedor</th>
+                            <th>Venta</th>
+                            <th>Comisión</th>
+                            <th>Premios</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1) LASOLUTION FONTOVA47</td>
+                            <td>157,000.00</td>
+                            <td>23,550.00</td>
+                            <td>350,000.00</td>
+                            <td>-216,550.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</template>

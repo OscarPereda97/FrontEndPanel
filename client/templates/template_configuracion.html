@@ -1,0 +1,558 @@
+<!--Configuración/Empresa-->
+<template name="datosEmpresa">
+    <div class="contenedor">
+        <div class="cabeceraEmpresa">
+            <div class="elementoCabecera tituloCabecera">
+                <h3>Editar empresa</h3>
+            </div>
+            <div class="elementoCabecera">
+                <button type="button" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                    Guardar</button>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="contenidoDatosEmpresa">
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#datosEmpresa">Datos de empresa</a></li>
+                        <li><a data-toggle="tab" href="#datosTicket">Datos de ticket</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="datosEmpresa" class="tab-pane fade in active">
+                            <div class="form-group">
+                                <label>Nombre:</label>
+                                <input type="text" name="nombre" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label>Eslogan:</label>
+                                <input type="text" name="eslogan" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono:</label>
+                                <input type="text" name="telefono" class="form-control" placeholder="(000) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label>Dirección:</label>
+                                <input type="text" name="direccion" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Código de la empresa:</label>
+                                <input type="text" name="codigoEmpresa" class="form-control" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Código del servidor:</label>
+                                <input type="text" name="codigoServidor" class="form-control" readonly>
+                            </div>
+                            <div class="dropdown">
+                                <label>Idioma:</label>
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Español
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>Español</li>
+                                </ul>
+                            </div>
+                            <div class="form-group">
+                                <label>Plan:</label>
+                                <input type="text" name="plan" class="form-control" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Licencias:</label>
+                                <input type="text" name="licencias" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <div id="datosTicket" class="tab-pane fade">
+                            <div class="form-group">
+                                <label>Ticket Pie 1:</label>
+                                <input type="text" name="ticketPie1" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Ticket Pie 2:</label>
+                                <input type="text" name="ticketPie2" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Ticket Pie 3:</label>
+                                <input type="text" name="ticketPie3" class="form-control">
+                            </div>
+                            <div class="usarTel">
+                                <label>Usar tel.:</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="usarTel"> Empresa</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="usarTel"> Vendedor</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="usarTel"> Ninguno</label>
+                                </div>
+                            </div>
+                            <div class="ticketConf">
+                                <label>Ticket conf.</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="impresor"> Impresor</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="whatsapp"> WhatsApp</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="sms"> SMS</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="ninguno"> Ninguno</label>
+                                </div>
+                            </div>
+                            <div class="anularTicket">
+                                <label>Anular ticket: </label>
+                                <input type="number" name="anularTicket" min="0" class="form-control">
+                                <div class="alert alert-info">
+                                    <p>Tiempo en minutos para anular tickets despúes de realizado. <br>
+                                        Deje en <strong>0 si NO desea poner límite.</strong></p>
+                                </div>
+                            </div>
+                            <div class="mostrarVendedor">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="mostrarVendedor"> Mostrar vendedor</label>
+                                </div>
+                                <div class="alert alert-info">
+                                    <p>Mostrar el nombre de vendedor en el ticket.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!--Configuración/Zonas-->
+<template name="zonas">
+    <div class="contenedor">
+        <div class="cabeceraZonas">
+            <div class="elementosZonas">
+                <h3>Zonas</h3>
+            </div>
+            <div class="elementosZonas">
+                <a href="/dashboard/configuracion/zonas/crear-zona"><button type="button" class="btn btn-primary"><i
+                            class="fa fa-plus" aria-hidden="true"></i> Crear
+                        Nuevo</button></a>
+            </div>
+        </div>
+        <div class="tablaZonas">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Comentario</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zona Mijail</td>
+                        <td>Zona Mijail</td>
+                        <td>
+                            <a href="/dashboard/configuracion/zonas/editar-zona"><button><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></button></a>
+                            <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">&#60;</button>
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">&#62;</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="crearZona">
+    <div class="container-fluid marco">
+        <div class="cabeceraNuevaZona">
+            <div class="elementoNuevaZona tituloCabecera">
+                <h3>Nueva Zona</h3>
+            </div>
+            <div class="elementoNuevaZona tituloCabecera">
+                <a href="/dashboard/configuracion/zonas"><button class="btn">&#60; Regresar</button></a>
+                <a href="#"><button class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                        Guardar</button></a>
+            </div>
+        </div>
+        <div class="formNuevaZona">
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Comentario:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" class="checkbox"> ¿Es empresa?</label>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- TEMPLATE Editar zona-->
+<template name="editarZona">
+    <div class="container-fluid marco">
+        <div class="editarZona">
+            <div class="cabeceraEditarZona">
+                <div class="elementoEditarZona">
+                    <h3>Editar zona</h3>
+                </div>
+                <div class="elementoEditarZona">
+                    <a href="/dashboard/configuracion/zonas/">
+                        <button type="button" class="btn">&#60; Regresar</button>
+                    </a>
+                    <a href="#">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                            Guardar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="distElemento">
+                <div class="form-group">
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre" class="form-control" placeholder="Zona Mijail">
+                </div>
+                <div class="form-group">
+                    <label>Comentario: </label>
+                    <input type="text" name="comentario" class="form-control" placeholder="Zona Mijail">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="esEmpresa"> ¿Es empresa?</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="activarLimites"> ¿Activar valores?</label>
+                </div>
+            </div>
+        </div>
+        <div class="datosDeEmpresa distElemento">
+            <div class="datosEmpresaCabecera">
+                <h3>Datos de Empresa</h3>
+            </div>
+            <div class="datosEmpresaForm">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombreEmpresa" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Eslogan:</label>
+                    <input type="text" name="esloganEmpresa" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono:</label>
+                    <input type="text" name="telefonoEmpresa" class="form-control">
+                </div>
+                <div class="dropdown">
+                    <label>Moneda:</label>
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Español
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Peso Dominicano</li>
+                        <li>Dolar Estadounidense</li>
+                        <li>Peso Chileno</li>
+                        <li>Euro</li>
+                        <li>Real Brasileño</li>
+                    </ul>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="impresor"> ¿Mostrar nombre del vendedor en el ticket?</label>
+                </div>
+            </div>
+        </div>
+        <div class="limiteDeVentas distElemento">
+            <div class="cabeceraLimiteVentas">
+                <h3>Límite de ventas</h3>
+            </div>
+            <div class="limiteGlobal distElemento">
+                <h4>Limite Global</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Quinela</th>
+                            <th>Palé</th>
+                            <th>Super Palé</th>
+                            <th>Tripleta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="limiteIndividual distElemento">
+                <h4>Limite Individual</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Quinela</th>
+                            <th>Palé</th>
+                            <th>Super Palé</th>
+                            <th>Tripleta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="limiteVendedor distElementos">
+                    <h4>Limite por vendedor</h4>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Personalizado</label>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Quinela</th>
+                                <th>Palé</th>
+                                <th>Super Palé</th>
+                                <th>Tripleta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                            readonly>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                            readonly>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                            readonly>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                            readonly>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group">
+                        <h4>Límite por Número</h4>
+                        <input type="text" class="form-control" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                        <h4>Números bloqueados</h4>
+                        <input type="text" class="form-control" placeholder="0">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+<!--Configuración/Limite de ventas-->
+<template name="limiteDeVentas">
+    <div class="container-fluid marco">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Lotería</th>
+                    <th>Modificado</th>
+                    <th>Usuario</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Global Dominicana)</td>
+                    <td>10/07/2019 23:37 PM</td>
+                    <td>Bernard</td>
+                    <td>
+                        <a href="/dashboard/configuracion/limiteventas/editar-limite-ventas"><button class="btn"><i
+                                    class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<!-- Editar límite de ventas-->
+<template name="editarLimiteVentas">
+    <div class="container-fluid marco">
+        <div class="editarLimiteVentas">
+            <div class="cabeceraLimiteVentas">
+                <div class="elementoLimiteVentas tituloCabecera">
+                    <h3>Editar Límite de Ventas <strong>(Global)</strong></h3>
+                </div>
+                <div class="elementoLimiteVentas">
+                    <a href="/dashboard/configuracion/limiteventas">
+                        <button class="btn">&#60; Regresar</button>
+                    </a>
+                    <a href="#">
+                        <button class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                            Guardar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="limiteGlobal distElemento">
+                <h4>Limite Global</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Quinela</th>
+                            <th>Palé</th>
+                            <th>Super Palé</th>
+                            <th>Tripleta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="limiteIndividual distElemento">
+                <h4>Limite Individual</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Quinela</th>
+                            <th>Palé</th>
+                            <th>Super Palé</th>
+                            <th>Tripleta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="limiteVendedor distElemento">
+                <h4>Limite por vendedor</h4>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="form-group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Personalizado</label>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Quinela</th>
+                            <th>Palé</th>
+                            <th>Super Palé</th>
+                            <th>Tripleta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                        readonly>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                        readonly>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                        readonly>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="0"
+                                        readonly>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-group">
+                    <h4>Límite por Número</h4>
+                    <input type="text" class="form-control" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <h4>Números bloqueados</h4>
+                    <input type="text" class="form-control" placeholder="0">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
